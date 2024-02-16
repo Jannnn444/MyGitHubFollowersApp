@@ -13,6 +13,9 @@
 		54EB72472B7F266E00E7E214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EB72452B7F266E00E7E214 /* LaunchScreen.storyboard */; };
 		54EB724F2B7F275300E7E214 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB724E2B7F275300E7E214 /* SearchVC.swift */; };
 		54EB72512B7F276A00E7E214 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB72502B7F276A00E7E214 /* FavoritesListVC.swift */; };
+		54EB72532B7F45D300E7E214 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB72522B7F45D300E7E214 /* HistoryVC.swift */; };
+		54EB72552B7F95E100E7E214 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB72542B7F95E100E7E214 /* GFButton.swift */; };
+		54EB72572B7FA22A00E7E214 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EB72562B7FA22A00E7E214 /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		54EB72482B7F266E00E7E214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54EB724E2B7F275300E7E214 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		54EB72502B7F276A00E7E214 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		54EB72522B7F45D300E7E214 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		54EB72542B7F95E100E7E214 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		54EB72562B7FA22A00E7E214 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				54EB72482B7F266E00E7E214 /* Info.plist */,
 				54EB724E2B7F275300E7E214 /* SearchVC.swift */,
 				54EB72502B7F276A00E7E214 /* FavoritesListVC.swift */,
+				54EB72522B7F45D300E7E214 /* HistoryVC.swift */,
+				54EB72542B7F95E100E7E214 /* GFButton.swift */,
+				54EB72562B7FA22A00E7E214 /* GFTextField.swift */,
 			);
 			path = MyGitHubFollowers;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EB72512B7F276A00E7E214 /* FavoritesListVC.swift in Sources */,
+				54EB72532B7F45D300E7E214 /* HistoryVC.swift in Sources */,
+				54EB72552B7F95E100E7E214 /* GFButton.swift in Sources */,
 				54EB724F2B7F275300E7E214 /* SearchVC.swift in Sources */,
 				54EB723B2B7F266C00E7E214 /* AppDelegate.swift in Sources */,
 				54EB723D2B7F266C00E7E214 /* SceneDelegate.swift in Sources */,
+				54EB72572B7FA22A00E7E214 /* GFTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
