@@ -61,7 +61,7 @@ class GFAlertVC: UIViewController {
     
     func configureTitleLabel() {
         containerView.addSubview(titleLabel)
-        titleLabel.text = alertTitle ?? "Empty Username"
+        titleLabel.text = alertTitle ?? "Something went wrong"
         // nil coalescing, default background title.
         
         NSLayoutConstraint.activate([
