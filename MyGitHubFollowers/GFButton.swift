@@ -9,7 +9,7 @@ import UIKit
 
 class GFButton: UIButton {
 
-    // init
+    // init -> default initializer
     override init(frame: CGRect) {
         
         // call the default one by calling SUPER.init(frame: code)
@@ -22,6 +22,7 @@ class GFButton: UIButton {
         
     }
     
+    // get the "fixed" fill in these by system
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -31,11 +32,13 @@ class GFButton: UIButton {
         super.init(frame: .zero)  // we will frame with autolayout, here can set 0
         // self means this GFButton background color = the background color we passed in
         self.backgroundColor = backgroundColor
+        // this setTitle will be input the taxt from our init future title String
         self.setTitle(title, for: .normal)
             
         configure()  
     }
     
+    // MARK: Configure TitleLabel
     // private mean this configured method can only call inside this file
     // so won't call this outside this initialize button
     private func configure() {
@@ -43,7 +46,6 @@ class GFButton: UIButton {
         titleLabel?.textColor     = .white
         titleLabel?.font         = UIFont.preferredFont(forTextStyle: .headline) // Bold
         
-        // autolayout = false
         // anytime we initialize GFButton, UIButton, VC && we WANT autolayout need this line
         translatesAutoresizingMaskIntoConstraints = false
     }

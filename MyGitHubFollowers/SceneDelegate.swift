@@ -31,6 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // Display the window, make user see it.
         window?.makeKeyAndVisible()
+        
+        
+        configureNavigationBar() 
     }
     
     
@@ -68,6 +71,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         return tabbar
     }
+    
+    // all the navigationbar will be in this settings
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemGreen
+    }
+    
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
