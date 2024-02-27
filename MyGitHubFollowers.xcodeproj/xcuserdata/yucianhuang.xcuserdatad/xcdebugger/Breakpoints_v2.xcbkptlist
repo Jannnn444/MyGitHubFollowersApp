@@ -20,5 +20,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "395D79C5-F838-4DBC-A76E-CC291399BF61"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyGitHubFollowers/Managers/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "getFollower(for:pages:completed:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "395D79C5-F838-4DBC-A76E-CC291399BF61 - d5a059a90b2f1fb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGitHubFollowers.NetworkManager.getFollower(for: Swift.String, pages: Swift.Int, completed: (Swift.Optional&lt;Swift.Array&lt;MyGitHubFollowers.Follower&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MyGitHubFollowers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yucianhuang/February/SeanAllen%20-%20GitHubApp/MyGitHubFollowers/MyGitHubFollowers/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "395D79C5-F838-4DBC-A76E-CC291399BF61 - d5a059a90b2f1fb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MyGitHubFollowers.NetworkManager.getFollower(for: Swift.String, pages: Swift.Int, completed: (Swift.Optional&lt;Swift.Array&lt;MyGitHubFollowers.Follower&gt;&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "MyGitHubFollowers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yucianhuang/February/SeanAllen%20-%20GitHubApp/MyGitHubFollowers/MyGitHubFollowers/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

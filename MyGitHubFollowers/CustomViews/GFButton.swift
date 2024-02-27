@@ -43,9 +43,8 @@ class GFButton: UIButton {
     // so won't call this outside this initialize button
     private func configure() {
         layer.cornerRadius        = 10
-        titleLabel?.textColor     = .white
+        setTitleColor(.white, for: .normal)
         titleLabel?.font         = UIFont.preferredFont(forTextStyle: .headline) // Bold
-        
         // anytime we initialize GFButton, UIButton, VC && we WANT autolayout need this line
         translatesAutoresizingMaskIntoConstraints = false
     }
