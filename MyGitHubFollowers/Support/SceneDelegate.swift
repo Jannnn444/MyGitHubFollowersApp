@@ -38,17 +38,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func createSearchNC() -> UINavigationController {
-        let searchVC        = SearchVC()
-        searchVC.title      = "Search"
-        searchVC.tabBarItem  = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        let searchVC                       = SearchVC()
+        searchVC.title                     = "Search"
+        searchVC.tabBarItem                = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         
         return UINavigationController(rootViewController: searchVC)
     }
     
     func createFavoritesNC() -> UINavigationController {
-        let favoritesListVC        = FavoritesListVC()
-        favoritesListVC.title      = "Favorites"
-        favoritesListVC.tabBarItem  = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        let favoritesListVC                = FavoritesListVC()
+        favoritesListVC.title              = "Favorites"
+        favoritesListVC.tabBarItem         = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
         
         return UINavigationController(rootViewController: favoritesListVC)
     }
@@ -56,8 +56,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createHistoryNC() -> UINavigationController {
         
         let historVC = HistoryVC()
-        historVC.title              = "History"
-        historVC.tabBarItem          = UITabBarItem(tabBarSystemItem: .history, tag: 2)
+        historVC.title                    = "History"
+        historVC.tabBarItem               = UITabBarItem(tabBarSystemItem: .history, tag: 2)
         
         return UINavigationController(rootViewController: historVC)
     }
@@ -65,9 +65,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func createTabbar() -> UITabBarController {
-        let tabbar                      = UITabBarController()
+        let tabbar                        = UITabBarController()
         UITabBar.appearance().tintColor   = .systemGreen
-        tabbar.viewControllers          = [createSearchNC(), createFavoritesNC(), createHistoryNC()]
+        tabbar.viewControllers            = [createSearchNC(), createFavoritesNC(), createHistoryNC()]
         
         return tabbar
     }

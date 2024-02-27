@@ -33,7 +33,9 @@ class SearchVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        navigationController?.isNavigationBarHidden = true   // the blure narrow left top
+     // navigationController?.isNavigationBarHidden = true   // the blure narrow left top
+     // better way when u switch back the navigationBar didn't dissappeared
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
@@ -51,7 +53,7 @@ class SearchVC: UIViewController {
         // the guard statment in computer property
         // MARK: Custom Alert
         guard isUsernameEntered  else {
-            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We loved to know who to look for.😀", buttonTitle: "Ok")
+            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We want to know who to look for.😀", buttonTitle: "Ok")
             return
         }
         
