@@ -5,26 +5,25 @@
 //  Created by yucian huang on 2024/2/27.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
     
-    // MARK: Singleton
-    
+    // MARK: Singleton This Page
     static let shared           = NetworkManager()
+    
     let baseURL                 = "https://api.github.com/users/"
+    let cache                   = NSCache<NSString, UIImage>()
     
     
     private init() {}
     
     func getFollower(for username: String, pages: Int, completed: @escaping (Result<[Follower], GFError>) -> Void) {
+        
         let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(pages)"
         
-        // use else to show error message
-        guard let url = URL(string: endpoint) else {
-            // if the completed follower can't read as nil, show errorMessaage.
-            // completed(nil,. invalidUsername )
-            
+        // use guard let else to show error message
+        guard let url = URL(string: endpoint) else {            
                 completed(.failure(.invalidUsername))
                 return
         }

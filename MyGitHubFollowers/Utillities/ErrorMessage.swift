@@ -15,4 +15,4 @@ enum GFError: String, Error {
 }
 
 
-// rawValue -> String, after this we can use it as result
+// rawValue -> String, after this we can use it as Result : FAILURE, SUCCESS in our networkManager.

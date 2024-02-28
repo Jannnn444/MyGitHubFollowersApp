@@ -25,8 +25,11 @@ class FollowerCell: UICollectionViewCell {
     // set function will call the data
     
     func set(follower: Follower) {
-        usernameLabel.text = follower.login
-        // login from follower model
+        usernameLabel.text = follower.login // login from follower model
+        
+        // get data from model
+        avatarImageView.downloadImage(from: follower.avatarUrl)
+        
     }
     
     
