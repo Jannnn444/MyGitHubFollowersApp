@@ -11,16 +11,15 @@ import UIKit
 class SearchVC: UIViewController {
     
     let logoImageView = UIImageView()
-    let usernameTextField = GFTextField()   // call this customm initializer, can it will call the congigure() inside
+    let usernameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
     
-    // check if the username empty in a computer property
-    // if the username not empty return true
+    // check if the username empty in a computer property, if the username not empty return true
     var isUsernameEntered: Bool { return !usernameTextField.text!.isEmpty }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .systemBackground // -> adapt whitemode white, black mode black
         configureLogoImagedView()
         configureTextField()
