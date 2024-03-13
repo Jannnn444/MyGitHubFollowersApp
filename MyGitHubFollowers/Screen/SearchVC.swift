@@ -52,6 +52,7 @@ class SearchVC: UIViewController {
         // the guard statment in computer property
         // MARK: Custom Alert
         guard isUsernameEntered  else {
+            
             presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username. We want to know who to look for.😀", buttonTitle: "Ok")
             return
         }

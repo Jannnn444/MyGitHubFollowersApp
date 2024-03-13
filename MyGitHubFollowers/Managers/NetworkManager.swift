@@ -20,7 +20,7 @@ class NetworkManager {
     
     func getFollower(for username: String, pages: Int, completed: @escaping (Result<[Follower], GFError>) -> Void) {
         
-        let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(pages)"
+        let endpoint = baseURL + "\(username)/followers?per_page=150&page=\(pages)"
         
         // use guard let else to show error message
         guard let url = URL(string: endpoint) else {            
